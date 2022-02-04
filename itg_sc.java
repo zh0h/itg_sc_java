@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MyClass {
+public class ItgScore {
     public static void main(String args[]) {
 		
 		int fant = 5;
@@ -49,9 +49,11 @@ public class MyClass {
 		
 		int max_sc = fant * total_step;
 		
-		urScore = score / max_sc * 100;
+		double urScore = score / (double) max_sc * 100;
 		
-		System.out.println("Your score is " + urScore);
+		String finalScore = String.format("%.2f",urScore);
+		
+		System.out.println("Your score is " + finalScore);
 
 	}
 }
